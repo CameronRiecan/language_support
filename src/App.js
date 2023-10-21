@@ -38,7 +38,10 @@ function App() {
 				  })}
 			  </select>
       </section>
-      <p>{t('welcome')}</p>
+      <p>{t('welcome1')}</p>
+      <p>{t('welcome2')}</p>
+      <p>{t('welcome3')}</p>
+      <p>{t('welcome4')}</p>
 		</div>
 	);
 }

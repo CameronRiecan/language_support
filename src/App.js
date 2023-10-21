@@ -29,14 +29,15 @@ function App() {
 	return (
 		<div className="App">
 			<h1>{t('projectIntro')}</h1>
-			<label>{t('choose')}</label>
-
-			<select value={lang} onChange={handleChange}>
-				{languages.map(item => {
-					return (<option key={item.value}
-						value={item.value}>{item.text}</option>);
-				})}
-			</select>
+			<section>
+        <label>{t('choose')}</label>
+        <select value={lang} onChange={handleChange}>
+				  {languages.map(item => {
+					  return (<option key={item.value}
+						  value={item.value}>{item.text}</option>);
+				  })}
+			  </select>
+      </section>
       <p>{t('welcome')}</p>
 		</div>
 	);

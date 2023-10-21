@@ -1,3 +1,17 @@
+/* CSS reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* Main CSS for project */
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +19,27 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+h1 {
+  margin: 0 auto;
+  padding: 3rem;
+  text-align: center;
+}
+
+section {
+  margin: 0 auto;
+  padding: 3rem;
+  text-align: center;
+}
+
+p {
+  margin: 0 auto;
+  padding: 5rem;
 }

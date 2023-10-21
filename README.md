@@ -1,70 +1,24 @@
-# Getting Started with Create React App
+# Cameron's Language Support Demo React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Introduction
 
-## Available Scripts
+Welcome to Cameron's Language Support Demo React App, a project designed to showcase the power of multi-language support in web applications. In today's globalized world, offering content in multiple languages is essential to reach a diverse audience.
 
-In the project directory, you can run:
+This platform enables users to seamlessly switch between English, Spanish, and Japanese, providing a more inclusive and user-friendly experience.
 
-### `npm start`
+A dropdown selection menu is provided to select a language: 
+- English
+- Español
+- 日本語
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Why Language Support Matters
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+In an interconnected world, catering to a diverse audience is crucial. Language support goes beyond mere translation; it's about ensuring that content resonates culturally and contextually. With this project, you can explore how a single web application can adapt its content to suit your language preferences. Whether you're a business looking to expand globally or an individual seeking content in your preferred language, this project demonstrates the practicality and ease of making your web app more accessible and engaging.
 
-### `npm test`
+## How It Works
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This project utilizes an API created through i18nexus, which seamlessly integrates with your React application. Thanks to the magic of Google Translate, text on the website transforms into your chosen language with just a few clicks. I have provided an example of switching between English, Spanish, and Japanese to illustrate how this technology can be applied.
 
-### `npm run build`
+### Prerequisites
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+To run this project locally, make sure you have Node.js and npm installed on your machine.

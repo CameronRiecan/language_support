@@ -18,6 +18,9 @@ i18next
     backend: {
       loadPath: loadPath,
     },
+    detection: {
+        order: ["querystring", "navigator", "cookie", "localStorage", "htmlTag"],
+      },
   })
 
 export default i18next;

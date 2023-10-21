@@ -1,25 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next'
+
+
+// Contains the value and text for the options
+const languages = [
+	{ value: '', text: "Options" },
+	{ value: 'en', text: "English" },
+	{ value: 'ja', text: "Japanese" },
+	{ value: 'es', text: "Spanish" }
+]
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+	// hook imported from 'react-i18next'
+	const { t } = useTranslation();
+
+	const [lang, setLang] = useState('en');
+
+	// This function put query that helps to
+	// change the language
+	const handleChange = e => {
+		setLang(e.target.value);
+		let loc = "http://localhost:3000/";
+		window.location.replace(loc + "?lng=" + e.target.value);
+	}
+
+	return (
+		<div className="App">
+
+			// we are showing the value by using the
+			// keys we have created in the website
+			<h1>{t('projectIntro')}</h1>
+			<label>{t('welcome')}</label>
+
+			<select value={lang} onChange={handleChange}>
+				{languages.map(item => {
+					return (<option key={item.value}
+						value={item.value}>{item.text}</option>);
+				})}
+			</select>
+		</div>
+	);
 }
 
 export default App;

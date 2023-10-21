@@ -6,7 +6,7 @@ Welcome to Cameron's Language Support Demo React App, a project designed to show
 
 This platform enables users to seamlessly switch between English, Spanish, and Japanese, providing a more inclusive and user-friendly experience.
 
-A dropdown selection menu is provided to select a language: 
+A dropdown selection menu is provided to select a language:
 - English
 - Español
 - 日本語

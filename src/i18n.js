@@ -12,13 +12,12 @@ i18next
   .use(initReactI18next)
   .init({
     fallbackLng: "en",
-
     ns: ["default"],
     defaultNS: "default",
-
     supportedLngs: ["en","ja","es"],
-
     backend: {
-      loadPath: loadPath
-    }
+      loadPath: loadPath,
+    },
   })
+
+export default i18next;

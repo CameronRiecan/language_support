@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { useTranslation } from 'react-i18next'
+import { useTranslation, initReactI18next } from 'react-i18next';
+import i18n from './i18n';
 
 
 // Contains the value and text for the options
@@ -27,11 +28,8 @@ function App() {
 
 	return (
 		<div className="App">
-
-			// we are showing the value by using the
-			// keys we have created in the website
 			<h1>{t('projectIntro')}</h1>
-			<label>{t('welcome')}</label>
+			<label>{t('choose')}</label>
 
 			<select value={lang} onChange={handleChange}>
 				{languages.map(item => {
@@ -39,6 +37,7 @@ function App() {
 						value={item.value}>{item.text}</option>);
 				})}
 			</select>
+      <p>{t('welcome')}</p>
 		</div>
 	);
 }
